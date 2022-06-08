@@ -22,9 +22,9 @@ export class Order {
   month: number;
 
   @Prop({ requred: true })
-  manager: number;
+  manager: string;
 
-  @Prop()
+  @Prop({ requred: true })
   id: number;
 
   @Prop()
@@ -33,8 +33,8 @@ export class Order {
   @Prop()
   email: number;
 
-  @Prop({ maxlength: 11 })
-  phone: number;
+  @Prop()
+  phone: string;
 
   @Prop()
   sity: string;
